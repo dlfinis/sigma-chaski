@@ -12,6 +12,8 @@ module.exports = {
   
   schema: true,
   
+module.exports = {
+  adapter: 'mongodb',
   attributes: {
     email: {
       type: 'email',
@@ -55,3 +57,5 @@ module.exports = {
     })
   }
 };
+
+sails.config.models.migrate='alter';

@@ -6,6 +6,7 @@
 */
 
 module.exports = {
+  adapter: 'mongodb',
   attributes: {
       name: {
          type: 'string',
@@ -15,5 +16,6 @@ module.exports = {
       access_level: 'integer'
   }
 };
-sails.config.models.migrate='drop';
+
+sails.config.models.migrate='alter';
 
