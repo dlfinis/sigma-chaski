@@ -28,10 +28,18 @@ module.exports.connections = {
   * Installed by default.                                                    *
   *                                                                          *
   ***************************************************************************/
-  localDiskDb: {
-    adapter: 'sails-disk'
+//  localDiskDb: {
+  //  adapter: 'sails-disk'
+ // },
+   mongodb: {
+     adapter   : 'sails-mongo',
+     host      : 'ds035533.mongolab.com',
+     port      : 35533,
+     user      : 'sigma-master',
+     password  : 'Password01',
+     database  : 'chasqui-development'
   },
-
+  
   /***************************************************************************
   *                                                                          *
   * MySQL is the world's most popular relational database.                   *

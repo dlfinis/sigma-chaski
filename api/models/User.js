@@ -6,7 +6,7 @@
 */
 
 module.exports = {
-
+  adapter: 'mongodb',
   attributes: {
 	name:'string',
 	password: 'string',
@@ -15,5 +15,6 @@ module.exports = {
 	}
   }
 };
-sails.config.models.migrate='drop';
+
+sails.config.models.migrate='alter';
 
