@@ -29,7 +29,7 @@ module.exports = {
         } else {
           res.json({
             user: user,
-            token: chaskiToken.issue({id : user.id })
+            token: chasquiToken.issue({id : user.id })
           });
         }
       });

@@ -11,8 +11,6 @@ var bcrypt = require('bcrypt');
 module.exports = {
   
   schema: true,
-  
-module.exports = {
   adapter: 'mongodb',
   attributes: {
     email: {

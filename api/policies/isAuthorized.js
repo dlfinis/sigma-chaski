@@ -14,11 +14,11 @@ module.exports = function (req, res, next) {
       var scheme = parts[0],
         credentials = parts[1];
 
-      if (/^Chaski$/i.test(scheme)) {
+      if (/^Chasqui$/i.test(scheme)) {
         token = credentials;
       }
     } else {
-      return res.json(401, {err: 'Format is Authorization: Chaski [token]'});
+      return res.json(401, {err: 'Format is Authorization: Chasqui [token]'});
     }
   } else if (req.param('token')) {
     token = req.param('token');
@@ -28,7 +28,7 @@ module.exports = function (req, res, next) {
     return res.json(401, {err: 'No Authorization header was found'});
   }
 
-  chaskiToken.verify(token, function (err, token) {
+  chasquiToken.verify(token, function (err, token) {
     if (err) return res.json(401, {err: 'Invalid Token!'});
     req.token = token; // This is the decrypted token or the payload you provided
     next();

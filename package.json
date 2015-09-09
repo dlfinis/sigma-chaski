@@ -1,5 +1,5 @@
 {
-  "name": "sigma-chaski",
+  "name": "sigma-chasqui",
   "private": true,
   "version": "0.0.0",
   "description": "a Sails application",
@@ -34,8 +34,12 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/dleon/sigma-chaski.git"
+    "url": "git://github.com/dleon/sigma-chasqui.git"
   },
   "author": "dleon",
-  "license": ""
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dleon/sigma-chasqui/issues"
+  },
+  "homepage": "https://github.com/dleon/sigma-chasqui#readme"
 }

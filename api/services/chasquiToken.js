@@ -1,5 +1,5 @@
 /**
- * Chaski Token
+ * Chasqui Token
  *
  * @description :: JSON Webtoken Service for sails
  * @help        :: See https://github.com/auth0/node-jsonwebtoken & http://sailsjs.org/#!/documentation/concepts/Services
@@ -7,7 +7,7 @@
  
 var
   jwt = require('jsonwebtoken'),
-  tokenSecret = "secretchaski";
+  tokenSecret = "secretchasqui";
 
 // Generates a token from supplied payload
 module.exports.issue = function(payload) {
